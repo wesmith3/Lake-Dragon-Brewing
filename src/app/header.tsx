@@ -23,8 +23,8 @@ function MenuBar() {
                 className="bg-ldb-red"
                 src={Dragon}
                 alt="dragon"
-                width={90}
-                height={90}
+                width={70}
+                height={70}
               />
             </Box>
           </Toolbar>
