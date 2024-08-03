@@ -26,13 +26,16 @@ function MenuBar() {
                 <Typography variant="body1" color="inherit">Home</Typography>
               </Link>
               <Link href="/about" passHref>
-                <Typography variant="body1" color="inherit">About</Typography>
+                <Typography variant="body1" color="inherit">About Us</Typography>
               </Link>
               <Link href="/services" passHref>
-                <Typography variant="body1" color="inherit">Services</Typography>
+                <Typography variant="body1" color="inherit">Our Brews</Typography>
               </Link>
               <Link href="/contact" passHref>
-                <Typography variant="body1" color="inherit">Contact</Typography>
+                <Typography variant="body1" color="inherit">Events</Typography>
+              </Link>
+              <Link href="/contact" passHref>
+                <Typography variant="body1" color="inherit">Food Menu</Typography>
               </Link>
             </Box>
           </Box>
