@@ -21,39 +21,10 @@ function MenuBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar  className='bg-ldb-green' position="static" sx={{ height: '70px' }}>
         <Toolbar>
-        <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-              onClick={() => setIsDrawerOpen(true)}
-              sx={{ mr: 2 }}
-            >
-              <MenuIcon />
-            </IconButton>
         <Box className="flex items-center justify-center h-screen" sx={{ flexGrow: 1 }}>
           <Image className='bg-ldb-red' src={Dragon} alt="dragon" width={90} height={90}/>
         </Box>
         </Toolbar>
-      </AppBar>
-      <Drawer
-          anchor="left"
-          className='drawer'
-          open={isDrawerOpen}
-          onClose={() => setIsDrawerOpen(false)}
-          PaperProps={{
-            sx: {
-              width: '15%',
-              padding: '15px',
-              backgroundColor: 'black',
-              color: "white",
-              textAlign: 'center',
-              fontFamily: 'serif',
-              fontSize: '35px',
-              fontWeight: 'bold'
-            },
-          }}
-        >
           <List>
             <br />
             <ListItem className='menu-item' button >
@@ -68,14 +39,8 @@ function MenuBar() {
               Search
             </ListItem>
           </List>
-          <List 
-          sx={{ 
-            position: 'absolute', 
-            bottom: '0', 
-            width: '100%',
-            fontSize: "25px"
-          }}
-          >
+          <List
+            >
             <ListItem className='menu-item' button >
               My Gallery
             </ListItem>
@@ -87,7 +52,7 @@ function MenuBar() {
     
                 </ListItem>
           </List>
-        </Drawer>
+              </AppBar>
     </Box>
     </>
   );
